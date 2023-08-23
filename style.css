@@ -1,0 +1,166 @@
+/* produkt.html */
+
+.produkt-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.billede-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.produkt-billede {
+  background-color: #e2e2e2;
+  padding: 75px;
+  margin-top: 10%;
+  margin-left: 2.5%;
+  max-width: 50%;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 12.5%;
+  left: 18%;
+  color: #5c5c5c;
+  padding: 5px 10px;
+  outline: 1px solid #9d9d9d;
+  font-family: "Work Sans", sans-serif;
+}
+
+.hjerte-badge {
+  position: absolute;
+  top: 12%;
+  right: 15%;
+  width: 20px;
+  height: 20px;
+  padding: 5px 5px;
+  outline: 1px solid #9d9d9d;
+  font-family: "Work Sans", sans-serif;
+}
+
+.produkt-detaljer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.produkt-overskrift {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+}
+
+.produkt-farve {
+  display: flex;
+  flex-direction: column;
+  color: grey;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+}
+
+.produkt-priser {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+}
+
+.produkt-priser p {
+  background-color: #e2e2e2;
+  padding: 10px;
+}
+
+.produkt-priser p:first-child {
+  text-decoration: line-through;
+}
+
+.produkt-priser p:nth-child(2) {
+  color: red;
+}
+
+/* produktliste.html */
+
+h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 2.5%;
+}
+
+.produktliste-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.billede-item {
+  background-color: #e2e2e2;
+  padding: 10%;
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produkt-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  height: 100%;
+}
+
+.produkt-item h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin: -5px;
+}
+
+.produkt-item h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #5c5c5c;
+}
+
+.produktliste-priser,
+.produktliste-pris {
+  display: flex;
+  gap: 10px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 100;
+}
+
+.produktliste-pris {
+  background-color: #e2e2e2;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.produktliste-priser {
+  margin: -10px;
+}
+
+.produktliste-priser p {
+  background-color: #e2e2e2;
+  padding: 10px;
+}
+
+.produktliste-priser p:first-child {
+  text-decoration: line-through;
+}
+
+.produktliste-priser p:nth-child(2) {
+  color: red;
+}
+
+.billede-item img {
+  max-width: 75%;
+}
