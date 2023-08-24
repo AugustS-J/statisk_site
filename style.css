@@ -73,6 +73,7 @@
 .produkt-priser p {
   background-color: #e2e2e2;
   padding: 10px;
+  margin-bottom: 5%;
 }
 
 .produkt-priser p:first-child {
@@ -81,6 +82,12 @@
 
 .produkt-priser p:nth-child(2) {
   color: red;
+}
+
+.size-dropdown,
+.add-to-basket-button {
+  font-family: "Work Sans", sans-serif;
+  padding: 10%;
 }
 
 /* produktliste.html */
