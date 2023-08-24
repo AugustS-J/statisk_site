@@ -164,3 +164,32 @@ h1 {
 .billede-item img {
   max-width: 75%;
 }
+
+.billede-link:hover {
+  text-decoration: underline;
+}
+
+.sold-out-badge {
+  position: absolute;
+  top: 42.5%;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 100;
+  color: black;
+  background-color: #e2e2e2;
+  padding: 4px 8px;
+  border: 0.75px solid #9d9d9d;
+  opacity: 0.75;
+}
+
+.discount-badge-liste {
+  position: absolute;
+  top: 25.5%;
+  left: 19%;
+  color: red;
+  padding: 4px 4px;
+  outline: 1px solid #9d9d9d;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 100;
+}
