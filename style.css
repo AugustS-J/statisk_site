@@ -211,6 +211,7 @@ h1 {
   font-weight: 100;
 }
 
+<<<<<<< HEAD
 /* kategori.html */
 
 .kategori-container {
@@ -281,5 +282,24 @@ h1 {
 
   .sider a {
     margin: 5px;
+=======
+@media (max-width: 767px) {
+  .produktliste-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .billede-item {
+    padding: 5%;
+    margin: 5%;
+  }
+
+  .produkt-item h2,
+  .produkt.item h3,
+  .produktliste-priser,
+  .produktliste-pris,
+  .sold-out-badge,
+  .discount-badge-liste {
+    font-size: 0.75rem;
+>>>>>>> produktliste
   }
 }
