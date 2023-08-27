@@ -95,6 +95,38 @@
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .produkt-container {
+    grid-template-columns: 1fr;
+  }
+
+  .produkt-billede {
+    padding: 50px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+  .discount-badge,
+  .hjerte-badge {
+    top: 8%;
+  }
+
+  .produkt-detaljer {
+    align-items: center;
+  }
+
+  .produkt-priser p {
+    margin-bottom: 2%;
+  }
+
+  .size-dropdown,
+  .add-to-basket-button {
+    padding: 5%;
+  }
+}
+
 /* produktliste.html */
 
 h1 {
