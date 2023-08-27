@@ -232,6 +232,20 @@ h1 {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .kategori-container {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .grid-item {
+    font-size: 0.9rem;
+    padding: 20px;
+    margin: 5px;
+  }
+}
+
 .grid-item a {
   color: black;
   text-decoration: none;
