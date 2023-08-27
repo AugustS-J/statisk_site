@@ -164,7 +164,7 @@ h1 {
 
 .sold-out-badge {
   position: absolute;
-  top: 42.5%;
+  top: 39%;
   font-family: "Work Sans", sans-serif;
   font-size: 0.85rem;
   font-weight: 100;
@@ -177,7 +177,7 @@ h1 {
 
 .discount-badge-liste {
   position: absolute;
-  top: 25.5%;
+  top: 24%;
   left: 19%;
   color: red;
   padding: 4px 4px;
