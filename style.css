@@ -1,3 +1,192 @@
+/* index.html */
+
+.sider {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  list-style: none;
+  margin-top: 35px;
+}
+
+.sider a {
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+  line-height: 2.5;
+}
+
+@media (max-width: 767px) {
+  .sider {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  .sider a {
+    margin: 5px;
+  }
+}
+
+/* kategori.html */
+
+.kategori-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  padding: 27px;
+}
+
+.grid-item {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 1px solid #5c5c5c;
+  background-color: #e2e2e2;
+  padding: 50px;
+  margin: 10px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .kategori-container {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .grid-item {
+    font-size: 0.9rem;
+    padding: 20px;
+    margin: 5px;
+  }
+}
+
+.grid-item a {
+  color: black;
+  text-decoration: none;
+}
+
+.grid-item:hover {
+  background-color: #c0c0c0;
+  cursor: pointer;
+}
+
+/* produktliste.html */
+
+h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 2.5%;
+}
+
+.produktliste-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.billede-item {
+  background-color: #e2e2e2;
+  padding: 10%;
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.billede-item:hover {
+  background-color: #c0c0c0;
+  cursor: pointer;
+}
+
+.produkt-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  height: 100%;
+}
+
+.produkt-item h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin: -5px;
+}
+
+.produkt-item h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #5c5c5c;
+}
+
+.produktliste-priser,
+.produktliste-pris {
+  display: flex;
+  gap: 10px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 100;
+}
+
+.produktliste-pris {
+  background-color: #e2e2e2;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.produktliste-priser {
+  margin: -10px;
+}
+
+.produktliste-priser p {
+  background-color: #e2e2e2;
+  padding: 10px;
+}
+
+.produktliste-priser p:first-child {
+  text-decoration: line-through;
+}
+
+.produktliste-priser p:nth-child(2) {
+  color: red;
+}
+
+.billede-item img {
+  max-width: 75%;
+}
+
+.billede-link:hover {
+  text-decoration: underline;
+}
+
+.sold-out-badge {
+  position: absolute;
+  top: 42.5%;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 100;
+  color: black;
+  background-color: #e2e2e2;
+  padding: 4px 8px;
+  border: 0.75px solid #9d9d9d;
+  opacity: 0.75;
+}
+
+.discount-badge-liste {
+  position: absolute;
+  top: 25.5%;
+  left: 19%;
+  color: red;
+  padding: 4px 4px;
+  outline: 1px solid #9d9d9d;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 100;
+}
+
 /* produkt.html */
 
 .produkt-container {
@@ -124,287 +313,5 @@
   .size-dropdown,
   .add-to-basket-button {
     padding: 5%;
-  }
-}
-
-/* produktliste.html */
-
-h1 {
-  font-family: "Work Sans", sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
-  padding: 2.5%;
-}
-
-.produktliste-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.billede-item {
-  background-color: #e2e2e2;
-  padding: 10%;
-  margin: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.billede-item:hover {
-  background-color: #c0c0c0;
-  cursor: pointer;
-}
-
-.produkt-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  height: 100%;
-}
-
-.produkt-item h2 {
-  font-family: "Work Sans", sans-serif;
-  font-size: 0.85rem;
-  font-weight: 400;
-  margin: -5px;
-}
-
-.produkt-item h3 {
-  font-family: "Work Sans", sans-serif;
-  font-size: 0.85rem;
-  font-weight: 300;
-  color: #5c5c5c;
-}
-
-.produktliste-priser,
-.produktliste-pris {
-  display: flex;
-  gap: 10px;
-  font-family: "Work Sans", sans-serif;
-  font-size: 0.85rem;
-  font-weight: 100;
-}
-
-.produktliste-pris {
-  background-color: #e2e2e2;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.produktliste-priser {
-  margin: -10px;
-}
-
-.produktliste-priser p {
-  background-color: #e2e2e2;
-  padding: 10px;
-}
-
-.produktliste-priser p:first-child {
-  text-decoration: line-through;
-}
-
-.produktliste-priser p:nth-child(2) {
-  color: red;
-}
-
-.billede-item img {
-  max-width: 75%;
-}
-
-.billede-link:hover {
-  text-decoration: underline;
-}
-
-.sold-out-badge {
-  position: absolute;
-  top: 42.5%;
-  font-family: "Work Sans", sans-serif;
-  font-size: 0.85rem;
-  font-weight: 100;
-  color: black;
-  background-color: #e2e2e2;
-  padding: 4px 8px;
-  border: 0.75px solid #9d9d9d;
-  opacity: 0.75;
-}
-
-.discount-badge-liste {
-  position: absolute;
-  top: 25.5%;
-  left: 19%;
-  color: red;
-  padding: 4px 4px;
-  outline: 1px solid #9d9d9d;
-  font-family: "Work Sans", sans-serif;
-  font-size: 0.75rem;
-  font-weight: 100;
-}
-
-<<<<<<< HEAD
-/* kategori.html */
-
-.kategori-container {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  list-style: none;
-  padding: 27px;
-}
-
-.grid-item {
-  font-family: "Work Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  border: 1px solid #5c5c5c;
-  background-color: #e2e2e2;
-  padding: 50px;
-  margin: 10px;
-  text-align: center;
-}
-
-@media (max-width: 767px) {
-  .kategori-container {
-    grid-template-rows: auto;
-    grid-template-columns: 1fr;
-    padding: 15px;
-  }
-
-  .grid-item {
-    font-size: 0.9rem;
-    padding: 20px;
-    margin: 5px;
-  }
-}
-
-.grid-item a {
-  color: black;
-  text-decoration: none;
-}
-
-.grid-item:hover {
-  background-color: #c0c0c0;
-  cursor: pointer;
-}
-
-/* index.html */
-
-.sider {
-  font-family: "Work Sans", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 500;
-  list-style: none;
-  margin-top: 35px;
-}
-
-.sider a {
-  color: black;
-  text-decoration: none;
-  margin: 10px;
-  line-height: 2.5;
-}
-
-@media (max-width: 767px) {
-  .sider {
-    font-size: 1.2rem;
-    margin-top: 20px;
-  }
-
-  .sider a {
-    margin: 5px;
-=======
-@media (max-width: 767px) {
-  .produktliste-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .billede-item {
-    padding: 5%;
-    margin: 5%;
-  }
-
-  .produkt-item h2,
-  .produkt-item h3,
-  .produktliste-priser,
-  .produktliste-pris,
-  .sold-out-badge,
-  .discount-badge-liste {
-    font-size: 0.75rem;
->>>>>>> produktliste
-  }
-}
-
-/* kategori.html */
-
-.kategori-container {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  list-style: none;
-  padding: 27px;
-}
-
-.grid-item {
-  font-family: "Work Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  border: 1px solid #5c5c5c;
-  background-color: #e2e2e2;
-  padding: 50px;
-  margin: 10px;
-  text-align: center;
-}
-
-@media (max-width: 767px) {
-  .kategori-container {
-    grid-template-rows: auto;
-    grid-template-columns: 1fr;
-    padding: 15px;
-  }
-
-  .grid-item {
-    font-size: 0.9rem;
-    padding: 20px;
-    margin: 5px;
-  }
-}
-
-.grid-item a {
-  color: black;
-  text-decoration: none;
-}
-
-.grid-item:hover {
-  background-color: #c0c0c0;
-  cursor: pointer;
-}
-
-/* index.html */
-
-.sider {
-  font-family: "Work Sans", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 500;
-  list-style: none;
-  margin-top: 35px;
-}
-
-.sider a {
-  color: black;
-  text-decoration: none;
-  margin: 10px;
-  line-height: 2.5;
-}
-
-@media (max-width: 767px) {
-  .sider {
-    font-size: 1.2rem;
-    margin-top: 20px;
-  }
-
-  .sider a {
-    margin: 5px;
   }
 }
