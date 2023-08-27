@@ -257,3 +257,14 @@ h1 {
   margin: 10px;
   line-height: 2.5;
 }
+
+@media (max-width: 767px) {
+  .sider {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  .sider a {
+    margin: 5px;
+  }
+}
