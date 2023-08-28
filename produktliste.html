@@ -13,168 +13,33 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul class="sider">
+                <li><a href="kategori.html">KATEGORIER.HTML</a></li>
+                <li><a href="produktliste.html">PRODUKTLISTE.HTML</a></li>
+                <li><a href="produkt.html">PRODUKT.HTML</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <h1>PRODUCTS</h1>
-        <div class="produktliste-container">
-            <a href="produkt.html" class="billede-link">
-                <div class="billede-item">
-                    <span class="discount-badge-liste">
-                        -11.82%
-                    </span>
-                    <img src="billeder/1562.webp" alt="Proof Grey T-shirt">
+        <h2></h2>
+        <template id="smallProductTemplate">
+            <article class="smallProduct">
+                <h3></h3>
+                <p class="produkt-overskrift"></p>
+                <img src="" alt="">
+                <p class="produkt-priser"></p>
+                <div class="discount-badge">
+                    <p></p>
+                    <p></p>
                 </div>
-            </a>
-            <a href="produkt.html" class="billede-link">
-                <div class="billede-item">
-                    <img src="billeder/1533.webp" alt="T-shirt" style="opacity: 0.75;">
-                    <span class="sold-out-badge">SOLD OUT</span>
-                </div>
-            </a>
-            <a href="produkt.html" class="billede-link">
-                <div class="billede-item">
-                    <img src="billeder/1534.webp" alt="Leaping Cat T-shirt">
-                </div>
-            </a>
-            <a href="produkt.html" class="billede-link">
-                <div class="billede-item">
-                    <img src="billeder/1539.webp" alt="Grey T-shirt">
-                </div>
-            </a>
-            <div class="produkt-item">
-                <h2>
-                    Proof Grey T-shirt
-                </h2>
-                <h3>
-                    Grey
-                </h3>
-                <div class="produktliste-priser">
-                    <p>
-                        499 DKK
-                    </p>
-                    <p>
-                        440 DKK
-                    </p>
-                </div>
-            </div>
-            <div class="produkt-item">
-                <h2>
-                    T-shirt
-                </h2>
-                <h3>
-                    Puma
-                </h3>
-                <div class="produktliste-pris">
-                    <p>
-                        899 DKK
-                    </p>
-
-                </div>
-            </div>
-            <div class="produkt-item">
-                <h2>
-                    Leaping Cat T-shirt
-                </h2>
-                <h3>
-                    Puma
-                </h3>
-                <div class="produktliste-pris">
-                    <p>
-                        899 DKK
-                    </p>
-
-                </div>
-            </div>
-            <div class="produkt-item">
-                <h2>
-                    Grey T-shirt
-                </h2>
-                <h3>
-                    Grey
-                </h3>
-                <div class="produktliste-pris">
-                    <p>
-                        1799 DKK
-                    </p>
-
-                </div>
-            </div>
-            <a href="produkt.html" class="billede-link">
-                <div class="billede-item">
-                    <img src="billeder/1563.webp" alt="Proof Blue T-shirt">
-                </div>
-            </a>
-            <a href="produkt.html" class="billede-link">
-                <div class="billede-item">
-                    <img src="billeder/1575.webp" alt="Sports hite T-shirt">
-                </div>
-            </a>
-            <a href="produkt.html" class="billede-link">
-                <div class="billede-item">
-                    <img src="billeder/1588.webp" alt="hite Dry-Fit T-shirt">
-                </div>
-            </a>
-            <a href="produkt.html" class="billede-link">
-                <div class="billede-item">
-                    <img src="billeder/1538.webp" alt="Track Black T-shirt">
-                </div>
-            </a>
-            <div class="produkt-item">
-                <h2>
-                    Proof Blue T-shirt
-                </h2>
-                <h3>
-                    Blue
-                </h3>
-                <div class="produktliste-pris">
-                    <p>
-                        499 DKK
-                    </p>
-
-                </div>
-            </div>
-            <div class="produkt-item">
-                <h2>
-                    Sports hite T-shirt
-                </h2>
-                <h3>
-                    Kipsta
-                </h3>
-                <div class="produktliste-pris">
-                    <p>
-                        500 DKK
-                    </p>
-
-                </div>
-            </div>
-            <div class="produkt-item">
-                <h2>
-                    hite Dry-Fit T-shirt
-                </h2>
-                <h3>
-                    Domyos
-                </h3>
-                <div class="produktliste-pris">
-                    <p>
-                        499 DKK
-                    </p>
-
-                </div>
-            </div>
-            <div class="produkt-item">
-                <h2>
-                    Track Black T-shirt
-                </h2>
-                <h3>
-                    Black
-                </h3>
-                <div class="produktliste-pris">
-                    <p>
-                        1799 DKK
-                    </p>
-                </div>
-            </div>
-        </div>
+                <div class="sold-out-badge"></div>
+                <a href="produkt.html">Læs mere</a>
+            </article>
+        </template>
     </main>
+    <script src="productlist.js"></script>
 </body>
 
 </html>
