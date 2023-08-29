@@ -1,3 +1,17 @@
+main {
+  margin: 5%;
+}
+
+.product-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 35px;
+}
+
+.smallProduct {
+  position: relative;
+}
+
 nav,
 ul.sider {
   margin-left: 1%;
@@ -13,84 +27,104 @@ ul.sider li a {
   font-weight: 500;
 }
 
-.smallProduct {
-  padding: 1.5%;
-}
-
 img {
-  max-width: 50%;
+  max-width: 75%;
   height: auto;
   background-color: #e2e2e2;
-  padding: 5%;
-  margin-left: 21.5%;
+  padding: 10%;
 }
 
 img:hover {
   background-color: #c0c0c0;
   cursor: pointer;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.025);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 h2 {
+  display: flex;
+  justify-content: center;
   font-family: "Work Sans", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   font-weight: 500;
+  padding: 3.25%;
 }
 
-h3 {
+.display-name {
   display: flex;
   justify-content: center;
   font-family: "Work Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  color: black;
+  margin-top: 10%;
+}
+
+.brand-name {
+  display: flex;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: .85rem;
+  font-weight: 400;
   color: #5c5c5c;
-  margin-bottom: 2.5%;
+  margin-top: 10%;
 }
 
 p,a  {
   font-family: "Work Sans", sans-serif;
   font-size: 0.85rem;
-  font-weight: 100;
+  font-weight: 300;
+  text-decoration: none;
 }
 
-.produkt-overskrift {
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.priser {
+  font-family: "Work Sans", sans-serif;
+  color: black;
+}
+
+.discount {
+  color: red;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 200;
+  margin-left: 10px;
+}
+
+.soldout {
   font-family: "Work Sans", sans-serif;
   font-size: 0.85rem;
   font-weight: 300;
-  color: #5c5c5c;
-}
-
-.produkt-priser {
-  font-family: "Work Sans", sans-serif;
-  font-size: 0.85rem;
-  font-weight: 100;
-  background-color: #e2e2e2;
-}
-
-/*
-
-.discount-badge {
-position: absolute;
-  color: red;
-  padding: 4px 4px;
-  outline: 1px solid #9d9d9d;
-  font-family: "Work Sans", sans-serif;
-  font-size: 0.75rem;
-  font-weight: 100;
-}
-
-.sold-out-badge {
-position: absolute;
-  font-family: "Work Sans", sans-serif;
-  font-size: 0.85rem;
-  font-weight: 100;
   color: black;
-  background-color: #e2e2e2;
-  padding: 4px 8px;
-  border: 0.75px solid #9d9d9d;
   opacity: 0.75;
 }
 
+.soldout::after {
+  position: absolute;
+  bottom: 60%;
+  left: 33%;
+  content: "UDSOLGT";
+  padding: 1em;
+  background-color: #9d9d9d;
+  border: 0.5px solid black;
+}
 
+/*
 @media (max-width: 767px) {
   .produktliste-container {
     grid-template-columns: repeat(2, 1fr);

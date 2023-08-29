@@ -9,23 +9,30 @@ function showProducts(products) {
 
 function showProduct(product) {
   //console.log(product);
+
   //fang template
   const template = document.querySelector("#smallProductTemplate").content;
+
   //lav en kopi
   const copy = template.cloneNode(true);
+
   //ændre indhold
-  copy.querySelector("h3").textContent = product.productdisplayname;
+  copy.querySelector(".display-name").textContent = product.productdisplayname;
+  copy.querySelector(".brand-name").textContent = product.brandname;
+  copy.querySelector(".priser").textContent = product.price + " DKK";
+  copy.querySelector(".discount").textContent = product.discount + " %";
   copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+
   if (product.soldout) {
     //produkt er udsolgt
-    copy.querySelector("article").classList.add("sold-out-badge");
+    copy.querySelector("article").classList.add("soldout");
   }
+
   //appende
-  document.querySelector("main").appendChild(copy);
+  document.querySelector(".product-grid").appendChild(copy);
 }
 
 /*
-
 <article class="smallProduct">
                 <h3></h3>
                 <p class="produkt-overskrift"></p>

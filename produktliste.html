@@ -23,22 +23,26 @@
         </nav>
     </header>
     <main>
-        <h2></h2>
-        <template id="smallProductTemplate">
-            <article class="smallProduct">
-                <h3></h3>
-                <p class="produkt-overskrift"></p>
-                <a href="produkt.html">
-                    <img src="" alt="">
-                </a>
-                <p class="produkt-priser"></p>
-                <div class="discount-badge">
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="sold-out-badge"></div>
-            </article>
-        </template>
+        <h2>PRODUCTS</h2>
+        <div class="product-grid">
+            <template id="smallProductTemplate">
+                <article class="smallProduct">
+                    <a href="produkt.html">
+                        <img src="" alt="">
+                        <h3 class="display-name"></h3>
+                        <h3 class="brand-name"></h3>
+                        <div class="container">
+                            <p class="priser"></p>
+                            <p class="discount"></p>
+                        </div>
+                    </a>
+                    <div>
+                        <p class="sold-out"></p>
+                    </div>
+                    <div></div>
+                </article>
+            </template>
+        </div>
     </main>
     <script src="productlist.js"></script>
 </body>
