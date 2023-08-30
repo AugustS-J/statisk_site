@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
-const id = urlParams.get("id");
+const category = urlParams.get("category");
 
-fetch("https://kea-alt-del.dk/t7/api/products" /* + id */)
+fetch("https://kea-alt-del.dk/t7/api/products?category=" + category)
   .then((res) => res.json())
   .then(showProducts);
 
@@ -11,7 +11,7 @@ function showProducts(products) {
 }
 
 function showProduct(product) {
-  //console.log(product);
+  console.log(product);
 
   //fang template
   const template = document.querySelector("#smallProductTemplate").content;
