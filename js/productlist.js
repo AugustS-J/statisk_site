@@ -30,11 +30,10 @@ function showProduct(product) {
     //produkt er udsolgt
     copy.querySelector("article").classList.add("soldout");
   }
-
   copy.querySelector(".single-product").setAttribute("href", `product.html?id=${product.id}`);
 
   //appende
-  document.querySelector(".product-grid").appendChild(copy);
+  document.querySelector(".productlist-grid").appendChild(copy);
 }
 
 /*
