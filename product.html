@@ -13,43 +13,26 @@
 </head>
 
 <body>
-    <main class="produkt-container">
-        <div class="billede-container">
-            <span class="discount-badge">
-                -11.82%
-            </span>
-            <img class="hjerte-badge" src="billeder/heart-492.svg" alt="Hjerte">
-            <img class="produkt-billede" src="billeder/1562.webp" alt="Sweat Proof T-shirt">
-        </div>
-        <div class="produkt-detaljer">
-            <h2 class="produkt-overskrift">
-                Proof Grey T-shirt
-            </h2>
-            <h3 class="produkt-farve">
-                Grey
-            </h3>
-            <div class="produkt-priser">
-                <p>
-                    499 DKK
-                </p>
-                <p>
-                    440 DKK
-                </p>
+    <main>
+        <img src="" alt="">
+        <section class="purchaseBox">
+            <h3 class="display-name"></h3>
+            <h4 class="brand-name"></h4>
+            <div class="produkt-container">
+                <p class="priser"></p>
+                <p class="discount"></p>
             </div>
-            <div class="size-dropdown">
-                <label for="size">Choose size:</label>
-                <select id="size" name="size">
+            <label>Choose size:
+                <select name="size">
                     <option value="small">S</option>
                     <option value="medium">M</option>
                     <option value="large">L</option>
                     <option value="x-large">XL</option>
                 </select>
-            </div>
-            <button class="add-to-basket-button" onclick="addToBasket">Add to basket</button>
-        </div>
+            </label>
+        </section>
     </main>
     <script src="product.js"></script>
-    <script src="productlist.js"></script>
 </body>
 
 </html>
