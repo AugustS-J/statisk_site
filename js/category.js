@@ -10,7 +10,7 @@ function showCategory(cat) {
   //cloner
   const clone = template.cloneNode(true);
   //ændrer indhold
-  clone.querySelector("a").textContent = cat.category;
+  clone.querySelector("").textContent = cat.category;
   clone.querySelector("a").href = `productlist.html?category=${cat.category}`;
   //appender
   document.querySelector(".letterGroup").appendChild(clone);
